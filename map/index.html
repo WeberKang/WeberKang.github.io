@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <style type="text/css">
+      body,html,#container{
+        width: 100%;
+        height: 100%;
+        margin: 0px
+      }
+    </style>
+    <title>海晏渔村游览地图</title>
+  </head>
+  <body>
+    <div id="container" tabindex="0"></div>
+    <script src="https://webapi.amap.com/maps?v=1.4.15&key=69d058e64c33cd90ba16cb0779622f8c"></script> 
+    <!-- key 我的开发者key -->
+    <script type="text/javascript">
+        var map = new AMap.Map('container', {
+           center:[102.76827, 24.809529], //中心点坐标
+           zoom:17  //缩放比,[10:20]为范围
+        });
+        // 样式
+
+        map.setMapStyle('amap://styles/b1c6f61293113a4923dce91a2cf6367d'); //设置样式,修改联系我
+        AMap.plugin(['AMap.ToolBar','AMap.Scale', 'AMap.MapType', 'AMap.Geolocation', 'AMap.OverView'],function(){
+            new AMap.Scale();
+            map.addControl(new AMap.ToolBar());
+            map.addControl(new AMap.Scale());
+            map.addControl(new AMap.MapType());
+            map.addControl(new AMap.Geolocation());
+            map.addControl(new AMap.OverView({isOpen:true}));
+        })
+        // 位置
+
+        var marker1 = new AMap.Marker({
+            position: new AMap.LngLat(102.764590, 24.807558), //设置坐标
+            title: '渔浦码头'
+            
+        });
+        
+        // marker1.setLabel({
+        //     offset: new AMap.Pixel(0, 0),  //设置文本标注偏移量
+        //     content: '<div class="info">百度</div>' +
+        //     '<img src="https://webapi.amap.com/images/amap.jpg">' +
+        //     '<a  href = "https://baidu.com/">baidu</a>', //设置文本标注内容
+        //     direction: 'top' //设置文本标注方位  
+        // }); 
+        
+        var marker2 = new AMap.Marker({
+            position: new AMap.LngLat(102.767355, 24.807474), //设置坐标
+            title: '石龙寺'
+        });
+
+        var marker3 = new AMap.Marker({
+            position: new AMap.LngLat(102.766477, 24.808542), //设置坐标
+            title: '西寨门'
+        });
+
+        var marker4 = new AMap.Marker({
+            position: new AMap.LngLat(102.767107, 24.808666), //设置坐标
+            title: '青石板路'
+        });
+
+        var marker5 = new AMap.Marker({
+            position: new AMap.LngLat(102.767562, 24.808576), //设置坐标
+            title: '七十二道门'
+        });
+
+        var marker6 = new AMap.Marker({
+            position: new AMap.LngLat(102.767903, 24.808286), //设置坐标
+            title: '萧大中故居'
+        });
+
+        var marker7 = new AMap.Marker({
+            position: new AMap.LngLat(102.768487, 24.809340), //设置坐标
+            title: '615号民居'
+        });
+
+        var marker8 = new AMap.Marker({
+            position: new AMap.LngLat(102.769504, 24.809257), //设置坐标
+            title: '老客事房'
+        });
+
+        var marker9 = new AMap.Marker({
+            position: new AMap.LngLat(102.770915, 24.809897), //设置坐标
+            title: '关圣宫'
+        });
+
+        var marker10 = new AMap.Marker({
+            position: new AMap.LngLat(102.771613, 24.809980), //设置坐标
+            title: '吕祖阁'
+        });
+        var markerList = [marker1, marker2,marker3, marker4, marker5, marker6, marker7, marker8, marker9, marker10]; //复制上面block增加点位
+        map.add(markerList);
+        // 信息框
+
+        var infoWindow1 = new AMap.InfoWindow({
+            anchor: 'bottom-center',
+            content: '<h2>渔浦码头</h2>' +
+            '<a href="https://imgtu.com/i/2TmKyt"><img src="https://z3.ax1x.com/2021/06/13/2TmKyt.png" alt="2TmKyt.png" border="0" /></a>' +
+            '<h2>介绍：</h2><p>历史上的海晏村，得益于滇池水脉的便利，一度成为滇池畔最为繁忙热闹的码头之一。近年来，海晏村还因为码头仙境般的日落美景而越来越受人们的欢迎。想必最吸引人的应该是海晏村长长的码头，在这里赏滇池，看日落，感受无尽变化云彩，听随波流动的水声和汹涌的海浪。</p>' +
+            '<a  href = "https://mp.weixin.qq.com/s?__biz=MzkwNDIyMzAyMA==&mid=2247483787&idx=1&sn=ecb94b8294d12ee859868ceb851a335d&chksm=c08b01c8f7fc88def1b4fb8cd711684fc79a5aef03a08b0791dba66d72fa01bb5e66ad8d0b0b&mpshare=1&scene=23&srcid=0613fc8lsM6avG33alaNGqkd&sharer_sharetime=1623597899214&sharer_shareid=07a8e7abd6109dbf94b971876a913beb#rd">渔浦码头</a>', //设置文本标注内容
+            offset: new AMap.Pixel(0, -30), //设置文本标注偏移量
+        });
+        // 绑定事件
+        AMap.event.addListener(marker1, 'click', function () {
+            infoWindow1.open(map, marker1.getPosition());
+        });
+
+        var infoWindow2 = new AMap.InfoWindow({
+            anchor: 'bottom-center',
+            content: '<h2>石龙寺</h2>' +
+            '<a href="https://imgtu.com/i/2TKkwV"><img src="https://z3.ax1x.com/2021/06/13/2TKkwV.png" alt="2TKkwV.png" border="0" /></a>' +
+            '<h2>介绍：</h2><p>石龙寺始建于明初。清朝乾隆、嘉庆、道光年间重修和扩建，占地约4200平方米。原为四进式建筑群落，后存第三、第四进及望海亭等建筑。第三进正殿，抬梁式木结构，单檐歇山顶，通面阔12.6米，通进深8.5米，前有十四级石阶。砂石月台长13.75米。宽11.3米。西有望海楼，置于整个建筑群最高处，与西山遥望，系悬山顶抬梁式木构建筑，楼前有上下月台，悬岩边有青石栏杆防护。石龙寺内存碑十通有《国史纂修官昆明钱沣记》、《重修石龙青碑》。望海楼原悬匾额"松风水月"为明崇祯帝亲笔。抗日战争期间石龙寺曾作昆华女子中学校舍，1986年公布为呈贡县文物保护单位。</p>' +
+            '<a  href = "https://mp.weixin.qq.com/s?__biz=MzkwNDIyMzAyMA==&mid=2247483823&idx=1&sn=7e3127a84ce4b5d6f1c2e3a002ea35b6&chksm=c08b01ecf7fc88fa4d99049bde31fad8dd623148da6e71145b99aaf9787b2b8d617365101ffa&mpshare=1&scene=23&srcid=0613QWPYZK7Th3HrYP4ZCtAS&sharer_sharetime=1623597911674&sharer_shareid=07a8e7abd6109dbf94b971876a913beb#rd">石龙寺</a>', //设置文本标注内容
+            offset: new AMap.Pixel(0, -30), //设置文本标注偏移量
+        });
+        // 绑定事件
+        AMap.event.addListener(marker2, 'click', function () {
+            infoWindow2.open(map, marker2.getPosition());
+        });
+
+        var infoWindow3 = new AMap.InfoWindow({
+            anchor: 'bottom-center',
+            content: '<h2>西寨门</h2>' +
+            '<a href="https://imgtu.com/i/2TvQJO"><img src="https://z3.ax1x.com/2021/06/14/2TvQJO.png" alt="2TvQJO.png" border="0" /></a>' +
+            '<h2>介绍：</h2><p>海晏村西寨门为外八字形土木结构门楼类建筑。建筑年代为清末，建筑特点为村落寨门。其所具有的空间界线划定作用对考证海晏村空间形态发展具有重要意义，具有一定的历史文化价值。</p>' +
+            '<a  href = "https://mp.weixin.qq.com/s?__biz=MzkwNDIyMzAyMA==&mid=2247484066&idx=1&sn=e57870516916dae303025e7bb2d4ae25&chksm=c08b02e1f7fc8bf7481b97cd71a8bc7354e753b0527b648edcd00874ab6555753b770bbdc838&mpshare=1&scene=23&srcid=0613yYYb1kuhFg0qHfUJriVg&sharer_sharetime=1623597935983&sharer_shareid=07a8e7abd6109dbf94b971876a913beb#rd">西寨门</a>', //设置文本标注内容
+            offset: new AMap.Pixel(0, -30), //设置文本标注偏移量
+        });
+        // 绑定事件
+        AMap.event.addListener(marker3, 'click', function () {
+            infoWindow3.open(map, marker3.getPosition());
+        });
+
+        var infoWindow4 = new AMap.InfoWindow({
+            anchor: 'bottom-center',
+            content: '<h2>青石板路</h2>' +
+            '<a href="https://imgtu.com/i/2TvTX9"><img src="https://z3.ax1x.com/2021/06/14/2TvTX9.png" alt="2TvTX9.png" border="0" /></a>' +
+            '<h2>介绍：</h2><p>海晏村是昆明现存唯一紧邻滇池，最具历史文化和社会价值的历史村落，比较完整地保留了现在罕见的滨湖鱼骨状街巷格局，及滇池湖岸渔业文化特点。所谓鱼骨状街巷布局，是由一条贯穿全村、长2公里的青石板路为主干，连接起各条细小的巷道，“鱼头”在滇池东岸的老码头，“鱼尾”延伸到环湖路。</p>' +
+            '<a  href = "https://mp.weixin.qq.com/s?__biz=MzkwNDIyMzAyMA==&mid=2247484066&idx=1&sn=e57870516916dae303025e7bb2d4ae25&chksm=c08b02e1f7fc8bf7481b97cd71a8bc7354e753b0527b648edcd00874ab6555753b770bbdc838&mpshare=1&scene=23&srcid=0613yYYb1kuhFg0qHfUJriVg&sharer_sharetime=1623597935983&sharer_shareid=07a8e7abd6109dbf94b971876a913beb#rd">青石板路</a>', //设置文本标注内容
+            offset: new AMap.Pixel(0, -30), //设置文本标注偏移量
+        });
+        // 绑定事件
+        AMap.event.addListener(marker4, 'click', function () {
+            infoWindow4.open(map, marker4.getPosition());
+        });
+
+        var infoWindow5 = new AMap.InfoWindow({
+            anchor: 'bottom-center',
+            content: '<h2>七十二道门</h2>' +
+            '<a href="https://imgtu.com/i/27S3SU"><img src="https://z3.ax1x.com/2021/06/14/27S3SU.png" alt="27S3SU.png" border="0" /></a>' +
+            '<h2>介绍：</h2><p>清朝中期，随着码头贸易的兴盛，海晏村的人流量与日俱增。外来人口的涌入，对餐饮、住宿等配套有了需求。那个时期，富庶的海晏村迎来了一波买地建房、扩建村落的热潮。我们如今看到的土木结构的民居建筑，绝大部分都是兴建于那时。其中，最具代表性的民居，是广为人知的“七十二道门”。</p>' +
+            '<a  href = "https://mp.weixin.qq.com/s?__biz=MzkwNDIyMzAyMA==&mid=2247483798&idx=1&sn=997de8393403dc26f0419c4381b9b0a5&chksm=c08b01d5f7fc88c304414cc5f29aae0d641f2a0cd4cfd535ab8822614acfc531f436035f16ce&mpshare=1&scene=23&srcid=0613XGJwxKDlvD1NAEn1vmTr&sharer_sharetime=1623597978766&sharer_shareid=07a8e7abd6109dbf94b971876a913beb#rd">七十二道门</a>', //设置文本标注内容
+            offset: new AMap.Pixel(0, -30), //设置文本标注偏移量
+        });
+        // 绑定事件
+        AMap.event.addListener(marker5, 'click', function () {
+            infoWindow5.open(map, marker5.getPosition());
+        });
+
+        var infoWindow6 = new AMap.InfoWindow({
+            anchor: 'bottom-center',
+            content: '<h2>萧大中故居</h2>' +
+            '<a href="https://imgtu.com/i/27SJOJ"><img src="https://z3.ax1x.com/2021/06/14/27SJOJ.png" alt="27SJOJ.png" border="0" /></a>' +
+            '<h2>介绍：</h2><p>萧大中(1908-1986)， 字庆华呈贡县海晏村人。七岁入学，十一岁升读呈贡高小十三岁就读昆华中学，十九岁考入云南东陆大学，民国十九年（1930）毕业后入南昌第三军军校补习所一年后，任第三军第七师第三十九团见习排长。蒋冯阎军阀混战中，他在安徽亳州攻击冯方受伤，后考入黄埔军校第六期，毕业后入南京步兵专科学校。一年后，回第三军任营、 团长，后再次考入中央陆军军官学校第十二期，经三年深造，因成绩优异，被校长杨杰留任教员。1949年12月9日，随卢汉举行云南起义，起义后，任云南省临时军政委员会高级参谋。1951年6月进西南军政大学高研班学习，后任云南省军区教导团军事教员、军区干部军训队军事教员，曾因成绩显著， 荣立三等功。1957 年7月任昆明市人民政府参事室参事，为社会主义建设和祖国统一大业做了许多有益的工作。</p>' +
+            '<a  href = "https://mp.weixin.qq.com/s?__biz=MzkwNDIyMzAyMA==&mid=2247483814&idx=1&sn=441f4e2eec3e10739bf866e214575da4&chksm=c08b01e5f7fc88f39f878bb9926b04fc082c8a3a9306db71208131049cb53b44ab1aee9a6990&mpshare=1&scene=23&srcid=0613QT2HAMEZNB5iCIwNTXqs&sharer_sharetime=1623597988646&sharer_shareid=07a8e7abd6109dbf94b971876a913beb#rd">萧大中故居</a>', //设置文本标注内容
+            offset: new AMap.Pixel(0, -30), //设置文本标注偏移量
+        });
+        // 绑定事件
+        AMap.event.addListener(marker6, 'click', function () {
+            infoWindow6.open(map, marker6.getPosition());
+        });
+
+        var infoWindow7 = new AMap.InfoWindow({
+            anchor: 'bottom-center',
+            content: '<h2>615号民居</h2>' +
+            '<a href="https://imgtu.com/i/27SUT1"><img src="https://z3.ax1x.com/2021/06/14/27SUT1.png" alt="27SUT1.png" border="0" /></a>' +
+            '<h2>介绍：</h2><p>完整体现了一颗印式民居“三间四耳倒八尺”的建筑特征，且梁枋雕花精美，现状保存良好，对研究滇池流域地区传统民居提供了重要素材，具有较高的建筑艺术价值。民居为私人所有，几乎整条老街的两边都还是老旧的土坯房和砖房。一些老建筑，雕梁画栋，虽经100多年甚至几百年的浸蚀，依然可以辨识出当年房屋的精致以及昆明“一颗映”建筑保存的集中体现。</p>' +
+            '<a  href = "https://mp.weixin.qq.com/s?__biz=MzkwNDIyMzAyMA==&mid=2247484059&idx=1&sn=93e523bbbd21a2898151b60c8427074c&chksm=c08b02d8f7fc8bce5d03d2b24d487ae20e076920d67de29b7f31643f3fda9a3fd341cdd2f790&mpshare=1&scene=23&srcid=0613OSjZBed2keB5loPvtgxt&sharer_sharetime=1623598025434&sharer_shareid=07a8e7abd6109dbf94b971876a913beb#rd">615号民居</a>', //设置文本标注内容
+            offset: new AMap.Pixel(0, -30), //设置文本标注偏移量
+        });
+        // 绑定事件
+        AMap.event.addListener(marker7, 'click', function () {
+            infoWindow7.open(map, marker7.getPosition());
+        });
+
+        var infoWindow8 = new AMap.InfoWindow({
+            anchor: 'bottom-center',
+            content: '<h2>老客事房</h2>' +
+            '<a href="https://imgtu.com/i/27S0fK"><img src="https://z3.ax1x.com/2021/06/14/27S0fK.png" alt="27S0fK.png" border="0" /></a>' +
+            '<h2>介绍：</h2><p>两层土木结构建筑，标准一颗印建筑格局，四重院落，四个天井。其中，有两重院落，仍有人居住，有人居住的房子，保护较好。无人居住的院落，其墙壁、屋顶、门窗等有一定毁损。村里还有一位105岁的老人居住在这里。</p>' +
+            '<a  href = "https://mp.weixin.qq.com/s?__biz=MzkwNDIyMzAyMA==&mid=2247483845&idx=1&sn=1a2ad7a6d88c830b4cb0ffd6cfea22bf&chksm=c08b0186f7fc8890619f9583b6ed28828ffda4bdd61f88587c2996fdf74dc76ed465e2f0c11c&mpshare=1&scene=23&srcid=06138J5sNjDMY5H5JNMRlMga&sharer_sharetime=1623597997542&sharer_shareid=07a8e7abd6109dbf94b971876a913beb#rd">老客事房</a>', //设置文本标注内容
+            offset: new AMap.Pixel(0, -30), //设置文本标注偏移量
+        });
+        // 绑定事件
+        AMap.event.addListener(marker8, 'click', function () {
+            infoWindow8.open(map, marker8.getPosition());
+        });
+
+        var infoWindow9 = new AMap.InfoWindow({
+            anchor: 'bottom-center',
+            content: '<h2>关圣宫</h2>' +
+            '<a href="https://imgtu.com/i/27SHmj"><img src="https://z3.ax1x.com/2021/06/14/27SHmj.png" alt="27SHmj.png" border="0" /></a>' +
+            '<h2>介绍：</h2><p>传统祭祀建筑该组建筑由前殿、正殿及两厢组成的四合院类传统祭祀性建筑。抗日战争时期，昆华女子学校曾在此开辟小学。整组建筑格局完整，梁枋雕花精美，建筑技艺具有典型云南地域特色，具有较高建筑艺术价值。</p>' +
+            '<a  href = "https://mp.weixin.qq.com/s?__biz=MzkwNDIyMzAyMA==&mid=2247483869&idx=1&sn=24cf501ec0ace46231ffea84129f5712&chksm=c08b019ef7fc88887c2732f56f1acd25731b15b71f34edf1b1bd41dabe8fe82c81200f47ef25&mpshare=1&scene=23&srcid=0613PRFCMg3Nkz7kpiidOyLi&sharer_sharetime=1623598006694&sharer_shareid=07a8e7abd6109dbf94b971876a913beb#rd">关圣宫</a>', //设置文本标注内容
+            offset: new AMap.Pixel(0, -30), //设置文本标注偏移量
+        });
+        // 绑定事件
+        AMap.event.addListener(marker9, 'click', function () {
+            infoWindow9.open(map, marker9.getPosition());
+        });
+
+        var infoWindow10 = new AMap.InfoWindow({
+            anchor: 'bottom-center',
+            content: '<h2>吕祖阁</h2>' +
+            '<a href="https://imgtu.com/i/27SOkq"><img src="https://z3.ax1x.com/2021/06/14/27SOkq.png" alt="27SOkq.png" border="0" /></a>' +
+            '<h2>介绍：</h2><p>该组建筑为海晏村祭祀吕洞宾之处，建筑年代为清，属传统祭祀性建筑。抗日战争时期，这里曾作为昆华女子学校的校舍。正殿屋顶为单檐歇山顶，雀替等梁枋构件雕花精美，具有较高建筑艺术价值。它曾是昆华女子学校校舍，在抗战时期，昆明成了全国的文化中心和大后方，而当昆明遭到日军袭击时，呈贡地区又成为昆明的大后方。</p>' +
+            '<a  href = "https://mp.weixin.qq.com/s?__biz=MzkwNDIyMzAyMA==&mid=2247483939&idx=1&sn=4b9eae60429dd3b49f6bbe49a0d14b3c&chksm=c08b0260f7fc8b76f286b5b6c0203f1aed0212e3fa485b48ac6d02659daaf1f6f6e37774a211&mpshare=1&scene=23&srcid=0613UeaenoFt8zgBdxge6jYV&sharer_sharetime=1623598014701&sharer_shareid=07a8e7abd6109dbf94b971876a913beb#rd">吕祖阁</a>', //设置文本标注内容
+            offset: new AMap.Pixel(0, -30), //设置文本标注偏移量
+        });
+        // 绑定事件
+        AMap.event.addListener(marker10, 'click', function () {
+            infoWindow10.open(map, marker10.getPosition());
+        });
+    </script>
+    <footer><p style="text-align: center">作者：Weber©</p>
+    </footer>
+  </body>
+</html>

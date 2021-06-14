@@ -1,0 +1,521 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/logo/genetics.png">
+  <link rel="icon" type="image/png" href="/img/logo/genetics.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="Weber的博客">
+  <meta name="author" content="Weber_Kang">
+  <meta name="keywords" content="">
+  <title>Html测试 - Weber&#39;s Blog</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.7","typing":{"enable":true,"typeSpeed":100,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Weber Blog</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/banner/banner.jpg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="Html测试">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-02-27 16:34" pubdate>
+        2021年2月27日 下午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      346 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      5
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">Html测试</h1>
+            
+            <div class="markdown-body">
+              <h1 id="顶部"><a href="#顶部" class="headerlink" title="顶部"></a>顶部</h1><pre><code>HTML相关测试
+</code></pre>
+<span id="more"></span>
+
+<h2 id="音乐"><a href="#音乐" class="headerlink" title="音乐"></a>音乐</h2><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=30148963&auto=0&height=66"></iframe>
+
+<p><em><strong>音乐get√</strong></em></p>
+<h2 id="表情"><a href="#表情" class="headerlink" title="表情"></a>表情</h2><p><del>:blush:</del>不可以用GitHub emoji悲~</p>
+<h2 id="本地图片"><a href="#本地图片" class="headerlink" title="本地图片"></a>本地图片</h2><p><img src="/img/wechat_qrcode.png" srcset="/img/loading.gif" alt="二维码" title="qrcode"></p>
+<p><code>相对地址/img/***下的，缺点加载极慢</code></p>
+<h2 id="在线图片"><a href="#在线图片" class="headerlink" title="在线图片"></a>在线图片</h2><p><code>From 图床微博</code></p>
+<p><img src="https://wx1.sinaimg.cn/large/be37ad18ly1fzw00pi79qj21hc0u0npe.jpg" srcset="/img/loading.gif" alt="HMS Warspite" title="HMS Warspite"></p>
+<h2 id="代码测试"><a href="#代码测试" class="headerlink" title="代码测试"></a>代码测试</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">#!/usr/bin/python</span><br><span class="hljs-comment"># -*- coding: utf-8 -*-</span><br><br><br><span class="hljs-keyword">import</span> os<span class="hljs-comment">#载入os标准库</span><br><span class="hljs-keyword">from</span> Bio.Blast <span class="hljs-keyword">import</span> NCBIXML<span class="hljs-comment">#载入biopython的xml文件解析第三方库</span><br><br><br><br><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_fasta_xml</span>(<span class="hljs-params">path</span>):</span><span class="hljs-comment">#寻找符合fasta_xml文件</span><br>    xml_list = []<br>    fasta_list = []<br>    <span class="hljs-keyword">for</span> root, directory, files <span class="hljs-keyword">in</span> os.walk(path):<br>        <span class="hljs-keyword">for</span> fasta_name <span class="hljs-keyword">in</span> files:<br>            name, _ = os.path.splitext(fasta_name)<br>            <span class="hljs-keyword">if</span> fasta_name.endswith(<span class="hljs-string">&#x27;.fasta&#x27;</span>):<br>                fasta_list.append(name)<br>    <span class="hljs-keyword">for</span> root, directory, files <span class="hljs-keyword">in</span> os.walk(path):<br>        <span class="hljs-keyword">for</span> file_name <span class="hljs-keyword">in</span> files:<br>            name, _ = os.path.splitext(file_name)<br>            <span class="hljs-keyword">if</span> name <span class="hljs-keyword">in</span> fasta_list <span class="hljs-keyword">and</span> file_name.endswith(<span class="hljs-string">&#x27;xml&#x27;</span>):<br>                xml_list.append(file_name)<br>    <span class="hljs-keyword">return</span> xml_list<br><br><br>E_VALUE_THRESH = <span class="hljs-built_in">float</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;输入E值：&quot;</span>))<span class="hljs-comment">#E值的确定</span><br><br><br><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">analysis_xml</span>(<span class="hljs-params">xml_list</span>):</span><span class="hljs-comment">#利用NCBIXML的xml解析器分析文件信息</span><br>    <span class="hljs-keyword">for</span> filename <span class="hljs-keyword">in</span> xml_list:<br>        result_handle = <span class="hljs-built_in">open</span>(filename)<br>        blast_record = NCBIXML.read(result_handle)<br>        <span class="hljs-keyword">for</span> alignment <span class="hljs-keyword">in</span> blast_record.alignments:<br>            <span class="hljs-keyword">for</span> hsp <span class="hljs-keyword">in</span> alignment.hsps:<br>                <span class="hljs-keyword">if</span> hsp.expect &lt; E_VALUE_THRESH:<span class="hljs-comment">#E值比较</span><br>                    print(<span class="hljs-string">&#x27;****&#x27;</span> + filename + <span class="hljs-string">&#x27;****&#x27;</span>)<br>                    print(<span class="hljs-string">&#x27;****Alignment****&#x27;</span>)<br>                    print(<span class="hljs-string">&#x27;sequence:&#x27;</span>, alignment.title)<br>                    print(<span class="hljs-string">&#x27;length:&#x27;</span>, alignment.length)<br>                    print(<span class="hljs-string">&#x27;e_value:&#x27;</span>, hsp.expect)<br>                    print(hsp.query[<span class="hljs-number">0</span>:<span class="hljs-number">75</span>] + <span class="hljs-string">&#x27;...&#x27;</span>)<span class="hljs-comment">#预览序列长度</span><br>                    print(hsp.match[<span class="hljs-number">0</span>:<span class="hljs-number">75</span>] + <span class="hljs-string">&#x27;...&#x27;</span>)<span class="hljs-comment">#预览序列长度</span><br>                    print(hsp.sbjct[<span class="hljs-number">0</span>:<span class="hljs-number">75</span>] + <span class="hljs-string">&#x27;...&#x27;</span>)<span class="hljs-comment">#预览序列长度</span><br>                    print(<span class="hljs-string">&#x27;\n&#x27;</span>)<br><br><br><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&#x27;__main__&#x27;</span>:<br>    analysis_xml(get_fasta_xml(<span class="hljs-string">&quot;.\\&quot;</span>))<br><br></code></pre></td></tr></table></figure>
+
+
+
+<h2 id="回到顶部"><a href="#回到顶部" class="headerlink" title="回到顶部"></a>回到顶部</h2><p><a href="#%E9%A1%B6%E9%83%A8">回到顶部</a></p>
+<h2 id="复选"><a href="#复选" class="headerlink" title="复选"></a>复选</h2><ul>
+<li><input checked="" disabled="" type="checkbox"> 选择</li>
+<li><input disabled="" type="checkbox"> 不选</li>
+</ul>
+<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><p>好嘛</p>
+<blockquote>
+<p><del>不知道引用什么</del></p>
+</blockquote>
+<h2 id="Html测试"><a href="#Html测试" class="headerlink" title="Html测试"></a>Html测试</h2><p><font size="5" color=#39C5BB>初音绿</font></p>
+<img src="/img/wechat_qrcode.png" srcset="/img/loading.gif" alt="qrcode" width="100" height="100" />
+
+<p><code>本地图像</code></p>
+<img src="https://wx1.sinaimg.cn/large/be37ad18ly1fzw00pi79qj21hc0u0npe.jpg" srcset="/img/loading.gif" alt="HMS Warspite" width="700" height="500">
+
+<p><code>url图像</code></p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/">BliBili</a></p>
+
+<table border="1">
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+</table>
+
+
+<p><del><code>html表格一点都不友好</code></del></p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E6%B5%8B%E8%AF%95/">测试</a>
+                    
+                      <a class="hover-with-bg" href="/categories/%E6%B5%8B%E8%AF%95/HTML/">HTML</a>
+                    
+                      <a class="hover-with-bg" href="/categories/%E6%B5%8B%E8%AF%95/MarkDown/">MarkDown</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%B5%8B%E8%AF%95/">测试</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2021/02/28/%E5%9C%A8%E7%BA%BF%E8%B5%84%E6%BA%90%E6%B5%8B%E8%AF%95/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">在线资源测试</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/02/25/MarkDown%E8%AF%AD%E6%B3%95%E6%B5%8B%E8%AF%95/">
+                        <span class="hidden-mobile">MarkDown语法测试</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- 不蒜子统计PV -->
+        <span id="busuanzi_container_site_pv" style="display: none">
+            总访问量 
+            <span id="busuanzi_value_site_pv"></span>
+             次
+          </span>
+      
+      
+        <!-- 不蒜子统计UV -->
+        <span id="busuanzi_container_site_uv" style="display: none">
+            总访客数 
+            <span id="busuanzi_value_site_uv"></span>
+             人
+          </span>
+      
+    
+  </div>
+
+
+  
+
+  
+</footer>
+
+<!-- SCRIPTS -->
+
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      var inputArea = document.querySelector("#local-search-input");
+      inputArea.onclick = function () {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+        this.onclick = null
+      }
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
