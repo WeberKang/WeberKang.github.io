@@ -8,15 +8,17 @@
 <head>
   <meta charset="UTF-8">
   <link rel="apple-touch-icon" sizes="76x76" href="/img/logo/genetics.png">
-  <link rel="icon" type="image/png" href="/img/logo/genetics.png">
+  <link rel="icon" href="/img/logo/genetics.png">
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="description" content="Weber的博客">
+  <meta name="description" content="顶部HTML相关测试
+">
   <meta name="author" content="Weber_Kang">
   <meta name="keywords" content="">
+  
   <title>Html测试 - Weber&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
@@ -55,7 +57,7 @@
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.7","typing":{"enable":true,"typeSpeed":100,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.11","typing":{"enable":true,"typeSpeed":100,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}},"search_path":"/local-search.xml"};
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
@@ -141,13 +143,13 @@
         
         
           <li class="nav-item" id="search-btn">
-            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+            <a class="nav-link" target="_self" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
                 class="iconfont icon-search"></i>&nbsp;</a>
           </li>
         
         
           <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" href="javascript:">&nbsp;<i
+            <a class="nav-link" target="_self">&nbsp;<i
                 class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
           </li>
         
@@ -235,10 +237,10 @@
 
 <p><em><strong>音乐get√</strong></em></p>
 <h2 id="表情"><a href="#表情" class="headerlink" title="表情"></a>表情</h2><p><del>:blush:</del>不可以用GitHub emoji悲~</p>
-<h2 id="本地图片"><a href="#本地图片" class="headerlink" title="本地图片"></a>本地图片</h2><p><img src="/img/wechat_qrcode.png" srcset="/img/loading.gif" alt="二维码" title="qrcode"></p>
+<h2 id="本地图片"><a href="#本地图片" class="headerlink" title="本地图片"></a>本地图片</h2><p><img src="/img/wechat_qrcode.png" srcset="/img/loading.gif" lazyload alt="二维码" title="qrcode"></p>
 <p><code>相对地址/img/***下的，缺点加载极慢</code></p>
 <h2 id="在线图片"><a href="#在线图片" class="headerlink" title="在线图片"></a>在线图片</h2><p><code>From 图床微博</code></p>
-<p><img src="https://wx1.sinaimg.cn/large/be37ad18ly1fzw00pi79qj21hc0u0npe.jpg" srcset="/img/loading.gif" alt="HMS Warspite" title="HMS Warspite"></p>
+<p><img src="https://wx1.sinaimg.cn/large/be37ad18ly1fzw00pi79qj21hc0u0npe.jpg" srcset="/img/loading.gif" lazyload alt="HMS Warspite" title="HMS Warspite"></p>
 <h2 id="代码测试"><a href="#代码测试" class="headerlink" title="代码测试"></a>代码测试</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">#!/usr/bin/python</span><br><span class="hljs-comment"># -*- coding: utf-8 -*-</span><br><br><br><span class="hljs-keyword">import</span> os<span class="hljs-comment">#载入os标准库</span><br><span class="hljs-keyword">from</span> Bio.Blast <span class="hljs-keyword">import</span> NCBIXML<span class="hljs-comment">#载入biopython的xml文件解析第三方库</span><br><br><br><br><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_fasta_xml</span>(<span class="hljs-params">path</span>):</span><span class="hljs-comment">#寻找符合fasta_xml文件</span><br>    xml_list = []<br>    fasta_list = []<br>    <span class="hljs-keyword">for</span> root, directory, files <span class="hljs-keyword">in</span> os.walk(path):<br>        <span class="hljs-keyword">for</span> fasta_name <span class="hljs-keyword">in</span> files:<br>            name, _ = os.path.splitext(fasta_name)<br>            <span class="hljs-keyword">if</span> fasta_name.endswith(<span class="hljs-string">&#x27;.fasta&#x27;</span>):<br>                fasta_list.append(name)<br>    <span class="hljs-keyword">for</span> root, directory, files <span class="hljs-keyword">in</span> os.walk(path):<br>        <span class="hljs-keyword">for</span> file_name <span class="hljs-keyword">in</span> files:<br>            name, _ = os.path.splitext(file_name)<br>            <span class="hljs-keyword">if</span> name <span class="hljs-keyword">in</span> fasta_list <span class="hljs-keyword">and</span> file_name.endswith(<span class="hljs-string">&#x27;xml&#x27;</span>):<br>                xml_list.append(file_name)<br>    <span class="hljs-keyword">return</span> xml_list<br><br><br>E_VALUE_THRESH = <span class="hljs-built_in">float</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;输入E值：&quot;</span>))<span class="hljs-comment">#E值的确定</span><br><br><br><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">analysis_xml</span>(<span class="hljs-params">xml_list</span>):</span><span class="hljs-comment">#利用NCBIXML的xml解析器分析文件信息</span><br>    <span class="hljs-keyword">for</span> filename <span class="hljs-keyword">in</span> xml_list:<br>        result_handle = <span class="hljs-built_in">open</span>(filename)<br>        blast_record = NCBIXML.read(result_handle)<br>        <span class="hljs-keyword">for</span> alignment <span class="hljs-keyword">in</span> blast_record.alignments:<br>            <span class="hljs-keyword">for</span> hsp <span class="hljs-keyword">in</span> alignment.hsps:<br>                <span class="hljs-keyword">if</span> hsp.expect &lt; E_VALUE_THRESH:<span class="hljs-comment">#E值比较</span><br>                    print(<span class="hljs-string">&#x27;****&#x27;</span> + filename + <span class="hljs-string">&#x27;****&#x27;</span>)<br>                    print(<span class="hljs-string">&#x27;****Alignment****&#x27;</span>)<br>                    print(<span class="hljs-string">&#x27;sequence:&#x27;</span>, alignment.title)<br>                    print(<span class="hljs-string">&#x27;length:&#x27;</span>, alignment.length)<br>                    print(<span class="hljs-string">&#x27;e_value:&#x27;</span>, hsp.expect)<br>                    print(hsp.query[<span class="hljs-number">0</span>:<span class="hljs-number">75</span>] + <span class="hljs-string">&#x27;...&#x27;</span>)<span class="hljs-comment">#预览序列长度</span><br>                    print(hsp.match[<span class="hljs-number">0</span>:<span class="hljs-number">75</span>] + <span class="hljs-string">&#x27;...&#x27;</span>)<span class="hljs-comment">#预览序列长度</span><br>                    print(hsp.sbjct[<span class="hljs-number">0</span>:<span class="hljs-number">75</span>] + <span class="hljs-string">&#x27;...&#x27;</span>)<span class="hljs-comment">#预览序列长度</span><br>                    print(<span class="hljs-string">&#x27;\n&#x27;</span>)<br><br><br><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&#x27;__main__&#x27;</span>:<br>    analysis_xml(get_fasta_xml(<span class="hljs-string">&quot;.\\&quot;</span>))<br><br></code></pre></td></tr></table></figure>
 
 
@@ -253,10 +255,10 @@
 <p><del>不知道引用什么</del></p>
 </blockquote>
 <h2 id="Html测试"><a href="#Html测试" class="headerlink" title="Html测试"></a>Html测试</h2><p><font size="5" color=#39C5BB>初音绿</font></p>
-<img src="/img/wechat_qrcode.png" srcset="/img/loading.gif" alt="qrcode" width="100" height="100" />
+<img src="/img/wechat_qrcode.png" srcset="/img/loading.gif" lazyload alt="qrcode" width="100" height="100" />
 
 <p><code>本地图像</code></p>
-<img src="https://wx1.sinaimg.cn/large/be37ad18ly1fzw00pi79qj21hc0u0npe.jpg" srcset="/img/loading.gif" alt="HMS Warspite" width="700" height="500">
+<img src="https://wx1.sinaimg.cn/large/be37ad18ly1fzw00pi79qj21hc0u0npe.jpg" srcset="/img/loading.gif" lazyload alt="HMS Warspite" width="700" height="500">
 
 <p><code>url图像</code></p>
 <p><a target="_blank" rel="noopener" href="https://www.bilibili.com/">BliBili</a></p>
@@ -285,9 +287,9 @@
                     
                       <a class="hover-with-bg" href="/categories/%E6%B5%8B%E8%AF%95/">测试</a>
                     
-                      <a class="hover-with-bg" href="/categories/%E6%B5%8B%E8%AF%95/HTML/">HTML</a>
-                    
                       <a class="hover-with-bg" href="/categories/%E6%B5%8B%E8%AF%95/MarkDown/">MarkDown</a>
+                    
+                      <a class="hover-with-bg" href="/categories/%E6%B5%8B%E8%AF%95/HTML/">HTML</a>
                     
                   </div>
                 
@@ -301,7 +303,11 @@
                 
               </div>
               
-                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
               
               
                 <div class="post-prevnext">
@@ -419,8 +425,9 @@
   
 </footer>
 
-<!-- SCRIPTS -->
 
+  <!-- SCRIPTS -->
+  
   <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
 
@@ -435,7 +442,6 @@
 
 <script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
 <script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
-<script  src="/js/debouncer.js" ></script>
 <script  src="/js/events.js" ></script>
 <script  src="/js/plugins.js" ></script>
 
@@ -443,7 +449,7 @@
 
 
   
-    <script  src="/js/lazyload.js" ></script>
+    <script  src="/js/img-lazyload.js" ></script>
   
 
 
@@ -468,6 +474,10 @@
 
 
 
+  <script  src="/js/local-search.js" ></script>
+
+
+
   <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
@@ -486,20 +496,6 @@
 
 
 
-  <script  src="/js/local-search.js" ></script>
-  <script>
-    (function () {
-      var path = "/local-search.xml";
-      var inputArea = document.querySelector("#local-search-input");
-      inputArea.onclick = function () {
-        searchFunc(path, 'local-search-input', 'local-search-result');
-        this.onclick = null
-      }
-    })()
-  </script>
-
-
-
 
 
 
@@ -514,7 +510,6 @@
 
 <!-- 主题的启动项 保持在最底部 -->
 <script  src="/js/boot.js" ></script>
-
 
 
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
