@@ -185,7 +185,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      4.3k 字
+      4.6k 字
     </span>
   
 
@@ -195,7 +195,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      47
+      50
        分钟
     </span>
   
@@ -234,6 +234,8 @@
 <p><font color=Red><b>由于VPS服务器在海外，导致有一定法律风险，并且你的ip地址会在国外，物理影响可能会影响打游戏等对延迟较高的操作（可以打国际服）或对游戏程序单独走ipv4来规避</b></font></p>
 <p><strong>遇到不会的善用搜索引擎，或者找个<del>男（女）</del>朋友帮你</strong></p>
 <p>本文最后会附上参考教程</p>
+<h2 id="重要一点：作为中国学生在能访问外网时要明辨是非，不做违法的事。"><a href="#重要一点：作为中国学生在能访问外网时要明辨是非，不做违法的事。" class="headerlink" title="重要一点：作为中国学生在能访问外网时要明辨是非，不做违法的事。"></a>重要一点：作为中国学生在能访问外网时要明辨是非，不做违法的事。</h2><h2 id="做任何事的时候牢记社会主义核心价值观"><a href="#做任何事的时候牢记社会主义核心价值观" class="headerlink" title="做任何事的时候牢记社会主义核心价值观"></a>做任何事的时候牢记社会主义核心价值观</h2><p><font color=Red><b>富强、民主、文明、和谐、自由、平等、公正、法治、爱国、敬业、诚信、友善</b></font></p>
+<p><font color=Red><b>爱国！爱国！爱国！</b></font></p>
 <h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>我们先来看下面一张简易的（<del>极其业余的</del>）网络拓补图，了解一下实现所谓的校园教育网免流量的原理。（用于简单解释了一下连接用于描述原理，大牛见笑）</p>
 <p><img src="/img/ipv6/1.jpg" srcset="/img/loading.gif" lazyload></p>
 <p>在上述的典型高校网络环境中，用户需要具有ipv4连接和ipv6连接。</p>
@@ -368,9 +370,13 @@
 <p><img src="/img/ipv6/27.png" srcset="/img/loading.gif" lazyload></p>
 <p>以上面服务器写vps服务器的ipv6地址，端口按你设定的来，密码按你设定的来，加密协议混淆按你的来，我推荐的是加密aes-256-cfb、协议auth_sha1_v4、混淆plain。备注分组你自己写不写都行与服务器端没关系。然后右键小飞机</p>
 <p><img src="/img/ipv6/38.png" srcset="/img/loading.gif" lazyload></p>
-<p>代理规则改为全局</p>
+<p>系统代理模式改为全局</p>
+<p><img src="/img/ipv6/39.png" srcset="/img/loading.gif" lazyload></p>
+<p>代理规则全局，<del>如果有路由器设置页面（例如192.168.1.1），请选择绕过局域网。</del></p>
 <p>服务器改为你刚刚添加的就可以正常访问网络google，bilibili了</p>
 <p>一般应用都会读取系统代理</p>
+<p>下图代表正常情况：</p>
+<p>证明你本地的127.1.1.1被成功代理了</p>
 <p><img src="/img/ipv6/29.png" srcset="/img/loading.gif" lazyload></p>
 <p>对于访问不正常的应用</p>
 <p>多在其设置里找代理设置</p>
@@ -380,7 +386,7 @@
 <p>一种是读取IE代理设置就是你浏览器的设置</p>
 <p>一种是自定义代理选sock5，地址127.0.0.1端口1080</p>
 <p><img src="/img/ipv6/31.png" srcset="/img/loading.gif" lazyload></p>
-<p>QQ微信同理</p>
+<p>QQ微信同理如果不设置，QQ微信认为你在国外，会走腾讯海外服务器接受消息。</p>
 <p><img src="/img/ipv6/32.png" srcset="/img/loading.gif" lazyload></p>
 <p>（非必须）对于有些游戏没有相关代理以暴雪战网和蓝叠模拟器为例（更新游戏，更新内容）：</p>
 <p>可以使用<code>Proxifier</code><a target="_blank" rel="noopener" href="http://www.hanzify.org/software/13717.html">下载地址</a></p>
@@ -405,6 +411,8 @@
 <p><a target="_blank" rel="noopener" href="https://www.bwgss.org/1156.html">Android（安卓）系统 ShadowsocksR / SSR 客户端配置教程丨搬瓦工SS教程 (bwgss.org)</a></p>
 <p><a target="_blank" rel="noopener" href="https://v2raycn.com/198.html">ShadowsocksR（SSR）iOS 客户端配置教程：Potatso Lite / Shadowrocket - V2Ray中文网 (v2raycn.com)</a></p>
 <p><em><strong>这个教程很详细我第一次玩ssr都是看这个做的</strong></em><a target="_blank" rel="noopener" href="https://www.quchao.net/ShadowsocksR.html">（重要）ShadowSocksR(SSR)功能详细介绍及使用教程 - Mark’s Blog - Quchao.net</a></p>
+<h2 id="重要一点：作为中国学生在能访问外网时要明辨是非，不做违法的事。-1"><a href="#重要一点：作为中国学生在能访问外网时要明辨是非，不做违法的事。-1" class="headerlink" title="重要一点：作为中国学生在能访问外网时要明辨是非，不做违法的事。"></a>重要一点：作为中国学生在能访问外网时要明辨是非，不做违法的事。</h2><h2 id="做任何事的时候牢记社会主义核心价值观-1"><a href="#做任何事的时候牢记社会主义核心价值观-1" class="headerlink" title="做任何事的时候牢记社会主义核心价值观"></a>做任何事的时候牢记社会主义核心价值观</h2><p><font color=Red><b>富强、民主、文明、和谐、自由、平等、公正、法治、爱国、敬业、诚信、友善</b></font></p>
+<p><font color=Red><b>爱国！爱国！爱国！</b></font></p>
 <h3 id="常见问题参考解决方法："><a href="#常见问题参考解决方法：" class="headerlink" title="常见问题参考解决方法："></a><strong>常见问题参考解决方法：</strong></h3><p><strong>1、用了一段时间发现ssr账号用不了了？</strong></p>
 <p>首先ping一下自己的ip，看看能不能ping的通，ping不通那么就是ip被墙了，ip被墙时，xshell也会连接不上服务器，遇到这种情况重新部署一个新的服务器，新的服务器就是新的ip。关于怎么ping ip的方法，可以自行网上搜索，或者用xshell软件连接服务器来判断，连不上即是被墙了。vultr开通和删除服务器非常方便，新服务器即新ip，大多数vps服务商都没有这样的服务，一般的vps服务商可能会提供免费更换1次ip的服务。</p>
 <p><strong>2、刚搭建好的ssr账号，ip能ping通，但是还是用不了？</strong></p>
